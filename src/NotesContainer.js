@@ -21,7 +21,7 @@ function ViewContainer({ text }) {
 function NotesContainer({ note, idx, onDelete }) {
   const initialState =
     window.localStorage.getItem(`note-${idx}`) ||
-    '# Hello World\n\n```\nedit here"\n```'
+    '# Hello World\n\n```\n edit here \n```'
   const [text, setText] = useState(initialState)
   const [edit, setEdit] = useState(false)
 
