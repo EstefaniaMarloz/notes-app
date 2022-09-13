@@ -21,7 +21,7 @@ function ViewContainer({ text }) {
 function NotesContainer({ note, idx, onDelete }) {
   const initialState =
     window.localStorage.getItem(`note-${idx}`) ||
-    '# Hello World\n\n```\n edit here\n```'
+    '# Hello World\n\n```\n write in the note\n```'
   const [text, setText] = useState(initialState)
   const [edit, setEdit] = useState(false)
 
@@ -74,7 +74,7 @@ function NotesContainer({ note, idx, onDelete }) {
                 aria-label="preview"
                 onClick={() => onToggle()}
               >
-                👌
+                ✅
               </ButtonSpan>
             ) : (
               <ButtonSpan

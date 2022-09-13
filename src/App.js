@@ -58,7 +58,7 @@ function App() {
               aria-label="moon"
               onClick={themeState.toggle}
             >
-              🌙
+              🌚
             </ButtonSpan>
           )}
         </h1>
